@@ -1,0 +1,400 @@
+$background: #fcfcfc
+$text: #777777
+$main: #ff8a70
+
+$shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.25)
+
+body
+    background: $background
+    font-size: 0
+
+#header
+    text-align: center
+    display: block
+    width: 100vw
+    height: 100vh
+    position: relative
+    overflow: auto
+
+    #main-heading
+        font-family: "Merriweather", serif
+        font-size: 72px
+        font-weight: bold
+        color: $background
+        background-image: url("../images/heading-backgrounds/heading-background-1.png")
+        background-repeat: no-repeat
+        display: block
+        height: 160px
+        line-height: 160px
+        width: 745px
+        margin: 40px auto 0
+
+        @media only screen and (max-width: 768px)
+            font-size: 48px
+            height: 100px
+            width: 465px
+            line-height: 100px
+            background-size: 465px 100px
+
+        @media only screen and (max-width: 480px)
+            font-size: 30px
+            height: 63px
+            width: 290px
+            line-height: 63px
+            background-size: 290px 63px
+            margin: 60px auto 0
+
+    #header-date
+        font-family: "Merriweather", serif
+        font-size: 30px
+        font-weight: bold
+        color: $background
+        background-image: url("../images/heading-backgrounds/heading-background-2.png")
+        background-repeat: no-repeat
+        display: block
+        height: 79px
+        line-height: 79px
+        width: 383px
+        margin: -40px auto 60px
+
+        @media only screen and (max-width: 768px)
+            font-size: 22px
+            height: 56px
+            width: 260px
+            line-height: 56px
+            background-size: 260px 56px
+            margin: -20px auto 60px
+
+        @media only screen and (max-width: 480px)
+            font-size: 18px
+            height: 40px
+            width: 240px
+            line-height: 40px
+            background-size: 240px 40px
+            margin: -10px auto 60px
+
+    #header-image
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: 0 100%
+        position: absolute
+        top: 0
+        z-index: -1
+
+        @media only screen and (max-width: 768px)
+            object-position: 15% 100%
+
+#our-story
+    display: block
+    position: relative
+    width: 1200px
+    margin: 100px auto
+
+    @media only screen and (max-width: 1220px)
+        width: 800px
+
+    @media only screen and (max-width: 840px)
+        width: auto
+        padding: 0 15px
+        margin: 60px 0
+
+    #our-story-image
+        display: inline-block
+        width: 460px
+        box-shadow: $shadow
+        margin-left: 40px
+
+        @media only screen and (max-width: 1220px)
+            display: block
+            margin: 40px auto 0
+
+        @media only screen and (max-width: 490px)
+            width: 100vw
+            margin-left: -15px
+
+    #our-story-container
+        display: inline-block
+        overflow: auto
+        width: 700px
+
+        @media only screen and (max-width: 1220px)
+            width: auto
+
+        #our-story-heading
+            font-family: "Merriweather", serif
+            font-size: 48px
+            color: $background
+            margin: 0 auto 20px
+            text-align: center
+            padding: 0
+            background-image: url("../images/heading-backgrounds/heading-background-3.png")
+            background-repeat: no-repeat
+            line-height: 91px
+            width: 327px
+            height: 91px
+
+            @media only screen and (max-width: 500px)
+                font-size: 30px
+                background-size: 205px 57px
+                width: 205px
+                height: 57px
+                line-height: 57px
+
+        .our-story-text
+            font-family: "Merriweather", serif
+            font-size: 14px
+            line-height: 24px
+            color: $text
+
+            a, a:hover, a:active, a:visited
+                color: $main
+                font-weight: bold
+                text-decoration: none
+
+#wedding-party
+    display: inline-block
+    width: 30%
+    overflow: auto
+    vertical-align: top
+
+    @media only screen and (max-width: 1200px)
+        display: block
+        width: 100%
+
+    #wedding-party-heading
+        font-family: "Merriweather", serif
+        font-size: 32px
+        color: $background
+        margin: 0 auto 20px
+        text-align: center
+        padding: 0
+        background-image: url("../images/heading-backgrounds/heading-background-3.png")
+        background-repeat: no-repeat
+        line-height: 91px
+        width: 327px
+        height: 91px
+
+        @media only screen and (max-width: 500px)
+            font-size: 30px
+            background-size: 280px 60px
+            width: 280px
+            height: 60px
+            line-height: 60px
+
+    p.wedding-party
+        font-family: "Merriweather", serif
+        font-size: 20px
+        line-height: 20px
+        margin: 20px 0
+        color: $text
+        text-align: center
+        
+        span
+            font-size: 16px
+            color: #333333
+
+#secondary-image
+    display: inline-block
+    width: calc(40% - 80px)
+    margin: 0 40px
+    box-shadow: $shadow
+    vertical-align: top
+
+    @media only screen and (max-width: 1200px)
+        display: block
+        width: 460px
+        margin: 40px auto 0
+
+    @media only screen and (max-width: 490px)
+        width: 100%
+
+#registries
+    display: inline-block
+    width: 30%
+    overflow: auto
+    vertical-align: top
+
+    @media only screen and (max-width: 1200px)
+        display: block
+        width: 100%
+        margin-top: 60px
+
+    #registries-heading
+        font-family: "Merriweather", serif
+        font-size: 32px
+        color: $background
+        margin: 0 auto 20px
+        text-align: center
+        padding: 0
+        background-image: url("../images/heading-backgrounds/heading-background-3.png")
+        background-repeat: no-repeat
+        line-height: 91px
+        width: 327px
+        height: 91px
+
+        @media only screen and (max-width: 500px)
+            font-size: 30px
+            background-size: 280px 60px
+            width: 280px
+            height: 60px
+            line-height: 60px
+
+    .registry-image
+        display: block
+        width: 300px
+        margin: 80px auto 30px
+
+        @media only screen and (max-width: 500px)
+            width: 240px
+            margin: 40px auto 20px
+
+    a.registry-button, a.registry-button:visited
+        text-transform: uppercase
+        display: block
+        height: 30px
+        width: 150px
+        margin: 0 auto
+        text-align: center
+        font-size: 24px
+        font-family: "Merriweather Sans", sans-serif
+        line-height: 30px
+        padding: 5px
+        border: 5px solid $main
+        color: $main
+        text-decoration: none
+        
+    a.registry-button:active, a.registry-button:hover
+        color: $background
+        background: $main
+        -webkit-transition: color 0.2s ease-in, background 0.2s ease-in
+        -moz-transition: color 0.2s ease-in, background 0.2s ease-in
+        -o-transition: color 0.2s ease-in, background 0.2s ease-in
+        transition: color 0.2s ease-in, background 0.2s ease-in
+    
+#rsvp
+    display: block
+    margin: 100px 0
+    width: 100%
+    position: relative
+    text-align: center
+
+    @media only screen and (max-width: 960px)
+        margin: 60px 0
+
+    #rsvp-background
+        position:
+        display: block
+        width: 100%
+        height: 600px
+        object-fit: cover
+        object-position: 0 0
+        z-index: -1
+
+        @media only screen and (max-width: 960px)
+            height: 300px
+
+        @media only screen and (max-width: 480px)
+            height: 150px
+
+    a#rsvp-button, a#rsvp-button:visited
+        display: block
+        position: absolute
+        top: 120px
+        left: 50%
+        transform: translate(-50%, 0)
+        line-height: 300px
+        border: 30px solid $background 
+        font-family: "Merriweather Sans", sans-serif
+        font-size: 200px
+        color: $background
+        text-decoration: none
+        padding: 0 60px
+
+        @media only screen and (max-width: 960px)
+            font-size: 100px
+            line-height: 150px
+            top: 60px
+            border: 15px solid $background
+            padding: 0 30px
+
+        @media only screen and (max-width: 480px)
+            font-size: 50px
+            line-height: 75px
+            top: 30px
+            border: 7.5px solid $background
+            padding: 0 15px
+
+    a#rsvp-button:active, a#rsvp-button:hover
+        color: $main
+        border: 30px solid $main
+        -webkit-transition: color 0.2s ease-in, border 0.2s ease-in
+        -moz-transition: color 0.2s ease-in, border 0.2s ease-in
+        -o-transition: color 0.2s ease-in, border 0.2s ease-in
+        transition: color 0.2s ease-in, border 0.2s ease-in
+
+        @media only screen and (max-width: 960px)
+            border: 15px solid $main
+
+        @media only screen and (max-width: 480px)
+            border: 7.5px solid $main
+
+#social-hashtag
+    display: block
+    width: 100%
+    position: relative
+    text-align: center
+    font-size: 0
+    margin-bottom: 100px
+
+    @media only screen and (max-width: 700px)
+        margin-bottom: 40px
+
+    #hashtag
+        font-family: "Merriweather", serif
+        font-size: 60px
+        color: $main
+        line-height: 60px
+        margin: 20px 0
+
+        @media only screen and (max-width: 700px)
+            font-size: 36px
+            line-height: 36px
+
+        @media only screen and (max-width: 440px)
+            font-size: 24px
+            line-height: 24px
+
+    .social-icon
+        display: inline-block
+        height: 60px
+        width: 60px
+        margin: 20px
+        color: $main
+        font-size: 60px
+
+        @media only screen and (max-width: 700px)
+            font-size: 36px
+            height: 36px
+            width: 36px
+
+footer
+    width: 100%
+    height: 60px
+    text-align: center
+    overflow: auto
+    
+    p
+        font-family: "Merriweather", serif
+        font-size: 14px
+        color: $text
+        line-height: 14px
+        padding: 0
+        margin: 18px 0
+
+        a, a:active, a:hover, a:visited
+            text-decoration: none
+            color: #333333
+            font-weight: bold
+
