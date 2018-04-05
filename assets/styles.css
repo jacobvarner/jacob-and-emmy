@@ -448,6 +448,56 @@ body {
   }
 }
 
+#social-hashtag #countdown {
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 440px) {
+  #social-hashtag #countdown {
+    margin-bottom: 0px;
+  }
+}
+
+#social-hashtag #countdown span#countdown-number {
+  display: inline-block;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 90px;
+  height: 100px;
+  color: #333333;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 440px) {
+  #social-hashtag #countdown span#countdown-number {
+    font-size: 60px;
+    height: 70px;
+  }
+}
+
+#social-hashtag #countdown span#countdown-text {
+  display: inline-block;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 36px;
+  color: #777777;
+  line-height: 50px;
+  height: 50px;
+  position: relative;
+  top: -10px;
+}
+
+@media only screen and (max-width: 440px) {
+  #social-hashtag #countdown span#countdown-text {
+    font-size: 28px;
+    top: 0px;
+  }
+}
+
 #social-hashtag #hashtag {
   font-family: "Merriweather", serif;
   font-size: 60px;
